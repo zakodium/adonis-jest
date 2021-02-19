@@ -7,6 +7,6 @@ module.exports = {
   modulePathIgnorePatterns: ['<rootDir>/build/'],
   testPathIgnorePatterns: ['/node_modules/', '<rootDir>/build/'],
   transform: {
-    '\\.m?[jt]sx?$': __dirname + '/transformer.js',
+    '\\.m?[jt]sx?$': `${__dirname}/transformer.js`,
   },
 };

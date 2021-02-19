@@ -4,7 +4,9 @@
   "description": "Jest preset for Adonis 5 support",
   "main": "adonis-jest.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint .",
+    "eslint-fix": "npm run eslint -- --fix",
+    "test": "npm run eslint"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,11 @@
   },
   "peerDependencies": {
     "typescript": "*"
+  },
+  "devDependencies": {
+    "@adonisjs/core": "^5.0.1",
+    "@zakodium/eslint-config": "^3.0.0",
+    "eslint": "^7.20.0",
+    "prettier": "^2.2.1"
   }
 }

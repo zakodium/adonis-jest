@@ -1,5 +1,8 @@
-const { Ignitor } = require('@adonisjs/core/build/standalone');
+'use strict';
+
 const Module = require('module');
+
+const { Ignitor } = require('@adonisjs/core/build/standalone');
 
 function setupTestApplication(root) {
   // @ts-expect-error

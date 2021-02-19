@@ -1,3 +1,5 @@
+'use strict';
+
 const { iocTransformer } = require('@adonisjs/ioc-transformer');
 const ts = require('typescript');
 
@@ -14,10 +16,10 @@ class AdonisTransformer {
     const { rootDir } = options;
     const transformer = iocTransformer(
       ts,
-      require(rootDir + '/.adonisrc.json'),
+      require(`${rootDir}/.adonisrc.json`),
     );
     const compilerOptions = ts.getParsedCommandLineOfConfigFile(
-      rootDir + '/tsconfig.json',
+      `${rootDir}/tsconfig.json`,
       {},
       {
         ...ts.sys,
@@ -25,7 +27,11 @@ class AdonisTransformer {
         getCurrentDirectory() {
           return rootDir;
         },
-        onUnRecoverableConfigFileDiagnostic() {},
+        onUnRecoverableConfigFileDiagnostic(diagnostic) {
+          // eslint-disable-next-line no-console
+          console.error(diagnostic);
+          process.exit(1);
+        },
       },
     ).options;
 
