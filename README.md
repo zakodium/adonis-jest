@@ -5,7 +5,7 @@ Jest preset for Adonis 5 support.
 ## Installation
 
 ```console
-npm install adonis-jest
+npm install --save-dev adonis-jest
 ```
 
 ## Usage
