@@ -2,8 +2,7 @@
 
 module.exports = {
   coverageProvider: 'v8',
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  testEnvironment: 'node',
+  testEnvironment: `${__dirname}/adonis-environment.js`,
   modulePathIgnorePatterns: ['<rootDir>/build/'],
   testPathIgnorePatterns: ['/node_modules/', '<rootDir>/build/'],
   transform: {

@@ -18,13 +18,5 @@ module.exports = {
 };
 ```
 
-Create the file `jest.setup.ts` with the following contents:
-
-```ts
-import { setupTestApplication } from 'adonis-jest';
-
-setupTestApplication(__dirname);
-```
-
 For now, only a basic application can be setup. In the future, there will be
 a way to setup a complete web server.
