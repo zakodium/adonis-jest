@@ -2,7 +2,7 @@
   "name": "adonis-jest",
   "version": "1.0.2",
   "description": "Jest preset for Adonis 5 support",
-  "main": "adonis-jest.js",
+  "main": "jest-preset.js",
   "scripts": {
     "eslint": "eslint .",
     "eslint-fix": "npm run eslint -- --fix",
