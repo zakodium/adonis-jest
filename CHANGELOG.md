@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/zakodium/adonis-jest/compare/v1.0.1...v1.0.2) (2021-02-19)
+
+
+### Bug Fixes
+
+* load Adonis application before test files ([cafd308](https://www.github.com/zakodium/adonis-jest/commit/cafd30832bd7740ca000819d85a203bc25c0607c))
+
 ### [1.0.1](https://www.github.com/zakodium/adonis-jest/compare/v1.0.0...v1.0.1) (2021-02-19)
 
 
