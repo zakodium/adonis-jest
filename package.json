@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/zakodium/adonis-jest#readme",
   "dependencies": {
-    "@adonisjs/ioc-transformer": "^1.0.3"
+    "@adonisjs/ioc-transformer": "^2.1.0"
   },
   "peerDependencies": {
     "@adonisjs/core": "*",
