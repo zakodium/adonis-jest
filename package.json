@@ -1,0 +1,28 @@
+{
+  "name": "adonis-jest",
+  "version": "0.0.0",
+  "description": "Jest preset for Adonis 5 support",
+  "main": "adonis-jest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakodium/adonis-jest.git"
+  },
+  "keywords": [
+    "jest",
+    "adonis"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zakodium/adonis-jest/issues"
+  },
+  "homepage": "https://github.com/zakodium/adonis-jest#readme",
+  "dependencies": {
+    "@adonisjs/ioc-transformer": "^1.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "*"
+  }
+}
