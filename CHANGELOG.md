@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://www.github.com/zakodium/adonis-jest/compare/v1.0.2...v2.0.0) (2021-06-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to Jest version 27
+
+### Miscellaneous Chores
+
+* update to Jest version 27 ([93b2b0c](https://www.github.com/zakodium/adonis-jest/commit/93b2b0cdd1e4a9e439c5e99788175a592c995164))
+
 ### [1.0.2](https://www.github.com/zakodium/adonis-jest/compare/v1.0.1...v1.0.2) (2021-02-19)
 
 
