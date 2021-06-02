@@ -22,9 +22,9 @@
   },
   "homepage": "https://github.com/zakodium/adonis-jest#readme",
   "dependencies": {
-    "@adonisjs/ioc-transformer": "^2.1.0",
-    "@adonisjs/require-ts": "^2.0.2",
-    "jest-environment-node": "^26.6.2"
+    "@adonisjs/ioc-transformer": "^2.2.1",
+    "@adonisjs/require-ts": "^2.0.4",
+    "jest-environment-node": "^27.0.3"
   },
   "peerDependencies": {
     "@adonisjs/application": "*",
@@ -34,10 +34,10 @@
   "devDependencies": {
     "@adonisjs/application": "^4.0.4",
     "@adonisjs/core": "^5.0.5-canary-rc-2",
-    "@zakodium/eslint-config": "^3.0.0",
-    "eslint": "^7.20.0",
-    "pino-pretty": "^4.5.0",
-    "prettier": "^2.2.1",
+    "@zakodium/eslint-config": "^3.0.2",
+    "eslint": "^7.27.0",
+    "pino-pretty": "^5.0.2",
+    "prettier": "^2.3.0",
     "typescript": "^4.1.5"
   }
 }

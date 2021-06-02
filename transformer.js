@@ -13,7 +13,9 @@ class AdonisTransformer {
     if (this.baseTranspileOptions !== null) {
       return;
     }
-    const { rootDir } = options;
+    const {
+      config: { rootDir },
+    } = options;
     const transformer = iocTransformer(
       ts,
       require(`${rootDir}/.adonisrc.json`),
