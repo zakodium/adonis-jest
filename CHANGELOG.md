@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.1](https://www.github.com/zakodium/adonis-jest/compare/v2.0.0...v2.0.1) (2021-07-19)
+
+
+### Bug Fixes
+
+* let it work with --runInBand ([b9574db](https://www.github.com/zakodium/adonis-jest/commit/b9574dbb4f0da5ba5b002bb041eb3ae5e294619f))
+
 ## [2.0.0](https://www.github.com/zakodium/adonis-jest/compare/v1.0.2...v2.0.0) (2021-06-02)
 
 
