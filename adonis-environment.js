@@ -32,7 +32,7 @@ class AdonisEnvironment extends NodeEnvironment {
     if (!server) {
       const ignitor = new Ignitor(this.rootDir);
       server = ignitor.httpServer();
-      server.application.switchEnvironment('test');      
+      server.application.switchEnvironment('test');
       providersWithReadyHook = server.application.providersWithReadyHook;
       providersWithShutdownHook = server.application.providersWithShutdownHook;
     }
