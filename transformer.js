@@ -47,10 +47,11 @@ class AdonisTransformer {
 
   process(sourceText, sourcePath, options) {
     this.init(options);
-    return ts.transpileModule(sourceText, {
+    const transpiled = ts.transpileModule(sourceText, {
       ...this.baseTranspileOptions,
       fileName: sourcePath,
-    }).outputText;
+    });
+    return { code: transpiled.outputText, map: transpiled.sourceMapText };
   }
 }
 

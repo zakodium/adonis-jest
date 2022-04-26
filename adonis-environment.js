@@ -14,7 +14,7 @@ let providersWithShutdownHook;
 class AdonisEnvironment extends NodeEnvironment {
   constructor(config, context) {
     super(config, context);
-    this.rootDir = config.rootDir;
+    this.rootDir = config.projectConfig.rootDir;
 
     const options = {
       cache: true,
