@@ -1,3 +1,6 @@
 extends: '@zakodium'
+parserOptions:
+  sourceType: script
 env:
+  node: true
   jest: true

@@ -3,7 +3,7 @@
 
 const { Ignitor } = require('@adonisjs/core/build/standalone');
 const { register } = require('@adonisjs/require-ts');
-const NodeEnvironment = require('jest-environment-node');
+const NodeEnvironment = require('jest-environment-node').TestEnvironment;
 
 const iocSymbol = Symbol.for('ioc.use');
 
@@ -14,7 +14,7 @@ let providersWithShutdownHook;
 class AdonisEnvironment extends NodeEnvironment {
   constructor(config, context) {
     super(config, context);
-    this.rootDir = config.rootDir;
+    this.rootDir = config.projectConfig.rootDir;
 
     const options = {
       cache: true,

@@ -1,6 +1,6 @@
 {
   "name": "adonis-jest",
-  "version": "2.0.1",
+  "version": "3.0.1",
   "description": "Jest preset for Adonis 5 support",
   "main": "jest-preset.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "dependencies": {
     "@adonisjs/ioc-transformer": "^2.3.3",
     "@adonisjs/require-ts": "^2.0.11",
-    "jest-environment-node": "^27.0.3"
+    "jest-environment-node": "^28.0.0"
   },
   "peerDependencies": {
     "@adonisjs/application": "*",
@@ -32,12 +32,12 @@
     "typescript": "*"
   },
   "devDependencies": {
-    "@adonisjs/application": "^4.0.4",
-    "@adonisjs/core": "^5.0.5-canary-rc-2",
-    "@zakodium/eslint-config": "^3.0.2",
-    "eslint": "^7.27.0",
-    "pino-pretty": "^5.0.2",
-    "prettier": "^2.3.0",
-    "typescript": "^4.1.5"
+    "@adonisjs/application": "^5.2.4",
+    "@adonisjs/core": "^5.7.5",
+    "@zakodium/eslint-config": "^5.1.1",
+    "eslint": "^8.14.0",
+    "pino-pretty": "^7.6.1",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
   }
 }

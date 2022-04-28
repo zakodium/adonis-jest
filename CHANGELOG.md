@@ -1,5 +1,23 @@
 # Changelog
 
+### [3.0.1](https://www.github.com/zakodium/adonis-jest/compare/v3.0.0...v3.0.1) (2022-04-26)
+
+
+### Bug Fixes
+
+* import NodeEnvironment correctly ([caa2dae](https://www.github.com/zakodium/adonis-jest/commit/caa2dae9f57697cf875f1b8ba4295affa1adfd1f))
+
+## [3.0.0](https://www.github.com/zakodium/adonis-jest/compare/v2.0.1...v3.0.0) (2022-04-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* add support for Jest 28
+
+### Features
+
+* add support for Jest 28 ([fa40a3a](https://www.github.com/zakodium/adonis-jest/commit/fa40a3ad67f39cfa4fffe62be44037f9c5f3a404))
+
 ### [2.0.1](https://www.github.com/zakodium/adonis-jest/compare/v2.0.0...v2.0.1) (2021-07-19)
 
 
