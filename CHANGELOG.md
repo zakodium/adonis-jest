@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/zakodium/adonis-jest/compare/v3.0.1...v4.0.0) (2022-08-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* update jest-environment-node to v29
+
+### Features
+
+* update jest-environment-node to v29 ([7978172](https://github.com/zakodium/adonis-jest/commit/79781724813c70509a672581a73b76642df53b4e))
+
 ### [3.0.1](https://www.github.com/zakodium/adonis-jest/compare/v3.0.0...v3.0.1) (2022-04-26)
 
 
