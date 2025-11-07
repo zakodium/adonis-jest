@@ -1,6 +1,6 @@
 {
   "name": "adonis-jest",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Jest preset for Adonis 5 support",
   "main": "jest-preset.js",
   "scripts": {

@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.0](https://github.com/zakodium/adonis-jest/compare/v4.0.0...v5.0.0) (2025-11-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* update Jest to v30 ([#16](https://github.com/zakodium/adonis-jest/issues/16))
+
+### Features
+
+* update Jest to v30 ([#16](https://github.com/zakodium/adonis-jest/issues/16)) ([91e0e12](https://github.com/zakodium/adonis-jest/commit/91e0e1253da5c4a7a135a6bf0a43bb3b90e47b68))
+
 ## [4.0.0](https://github.com/zakodium/adonis-jest/compare/v3.0.1...v4.0.0) (2022-08-29)
 
 
