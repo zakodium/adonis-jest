@@ -8,6 +8,7 @@ const { iocTransformer } = require('@adonisjs/ioc-transformer');
 module.exports = function getIocTransformer(ts, appRoot) {
   return iocTransformer(
     ts,
+    // eslint-disable-next-line import/no-dynamic-require
     rcParser.parse(require(join(appRoot, '.adonisrc.json'))),
   );
 };

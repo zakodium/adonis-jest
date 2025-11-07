@@ -18,6 +18,7 @@ class AdonisTransformer {
     } = options;
     const transformer = iocTransformer(
       ts,
+      // eslint-disable-next-line import/no-dynamic-require
       require(`${rootDir}/.adonisrc.json`),
     );
     const compilerOptions = ts.getParsedCommandLineOfConfigFile(

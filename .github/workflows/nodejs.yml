@@ -2,21 +2,13 @@ name: Node.js CI
 
 on:
   push:
-    branches: main
+    branches:
+      - main
   pull_request:
 
-env:
-  NODE_VERSION: 16.x
-
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Install dependencies
-        run: npm install
-      - name: Run ESLint
-        run: npm run eslint
+  nodejs:
+    # Documentation: https://github.com/zakodium/workflows#nodejs-ci
+    uses: zakodium/workflows/.github/workflows/nodejs.yml@nodejs-v1
+    with:
+      disable-tests: true
