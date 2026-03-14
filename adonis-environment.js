@@ -7,7 +7,7 @@ const NodeEnvironment = require('jest-environment-node').TestEnvironment;
 
 const iocSymbol = Symbol.for('ioc.use');
 
-let app;
+let server;
 let providersWithReadyHook;
 let providersWithShutdownHook;
 
@@ -28,16 +28,13 @@ class AdonisEnvironment extends NodeEnvironment {
     register(this.rootDir, options);
   }
 
-  async createApplication() {
-    if (!app) {
+  async createServer() {
+    if (!server) {
       const ignitor = new Ignitor(this.rootDir);
-      app = ignitor.application('test');
-      await app.setup();
-      await app.registerProviders();
-      await app.bootProviders();
-      await app.requirePreloads();
-      providersWithReadyHook = app.providersWithReadyHook;
-      providersWithShutdownHook = app.providersWithShutdownHook;
+      server = ignitor.httpServer();
+      server.application.switchEnvironment('test');
+      providersWithReadyHook = server.application.providersWithReadyHook;
+      providersWithShutdownHook = server.application.providersWithShutdownHook;
     }
   }
 
@@ -48,10 +45,10 @@ class AdonisEnvironment extends NodeEnvironment {
       process.env.NODE_ENV = 'testing';
     }
     try {
-      await this.createApplication();
-      app.providersWithReadyHook = providersWithReadyHook;
-      app.providersWithShutdownHook = providersWithShutdownHook;
-      await app.start();
+      await this.createServer();
+      server.application.providersWithReadyHook = providersWithReadyHook;
+      server.application.providersWithShutdownHook = providersWithShutdownHook;
+      await server.start();
       this.global[iocSymbol] = global[iocSymbol];
     } catch (e) {
       console.error('Error while setting up Adonis test environment');
@@ -61,9 +58,9 @@ class AdonisEnvironment extends NodeEnvironment {
   }
 
   async teardown() {
-    await app.shutdown();
-    app.isShuttingDown = false;
-    app.state = 'booted';
+    await server.close();
+    server.application.isShuttingDown = false;
+    server.application.state = 'booted';
     await super.teardown();
   }
 }
